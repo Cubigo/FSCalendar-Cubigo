@@ -82,7 +82,7 @@
     return self;
 }
 
-- (void)setTitleFont:(UIFont *)titleFont
+- (void)setFontForTitle:(UIFont *)titleFont
 {
     if (![_titleFont isEqual:titleFont]) {
         _titleFont = titleFont;
