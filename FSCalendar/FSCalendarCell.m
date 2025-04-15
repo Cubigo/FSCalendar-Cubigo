@@ -195,7 +195,7 @@
     if (![textColor isEqual:_titleLabel.textColor]) {
         _titleLabel.textColor = textColor;
     }
-    UIFont *titleFont = self.calendar.appearance.titleFont;
+    UIFont *titleFont = self.calendar.appearance.mainTitleFont;
     if (![titleFont isEqual:_titleLabel.font]) {
         _titleLabel.font = titleFont;
     }

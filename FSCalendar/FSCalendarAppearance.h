@@ -47,7 +47,7 @@ typedef NS_OPTIONS(NSUInteger, FSCalendarCaseOptions) {
 /**
  * The font of the day text.
  */
-@property (strong, nonatomic) UIFont   *titleFont;
+@property (strong, nonatomic) UIFont   *mainTitleFont;
 
 /**
  * The font of the subtitle text.

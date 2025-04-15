@@ -30,7 +30,7 @@
     self = [super init];
     if (self) {
         
-        _titleFont = [UIFont systemFontOfSize:FSCalendarStandardTitleTextSize];
+        _mainTitleFont = [UIFont systemFontOfSize:FSCalendarStandardTitleTextSize];
         _subtitleFont = [UIFont systemFontOfSize:FSCalendarStandardSubtitleTextSize];
         _weekdayFont = [UIFont systemFontOfSize:FSCalendarStandardWeekdayTextSize];
         _headerTitleFont = [UIFont systemFontOfSize:FSCalendarStandardHeaderTextSize];
@@ -84,8 +84,8 @@
 
 - (void)setFontForTitle:(UIFont *)titleFont
 {
-    if (![_titleFont isEqual:titleFont]) {
-        _titleFont = titleFont;
+    if (![_mainTitleFont isEqual:titleFont]) {
+        _mainTitleFont = titleFont;
         [self.calendar configureAppearance];
     }
 }
@@ -508,7 +508,7 @@
 
 - (void)setTitleTextSize:(CGFloat)titleTextSize
 {
-    self.titleFont = [self.titleFont fontWithSize:titleTextSize];
+    self.mainTitleFont = [self.mainTitleFont fontWithSize:titleTextSize];
 }
 
 - (void)setSubtitleTextSize:(CGFloat)subtitleTextSize
